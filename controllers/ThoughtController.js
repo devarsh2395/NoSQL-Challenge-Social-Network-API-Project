@@ -45,7 +45,7 @@ const thoughtController = {
             .then((userData) => {
                 if (!userData) {
                     return res.status(404)
-                        .json({ messsage: "No user with this Id" })
+                        .json({ messsage: "Thought Created" })
                 }
                 res.json({ message: "Thought Created" })
             })
@@ -93,7 +93,7 @@ const thoughtController = {
             .then((userData) => {
                 if (!userData) {
                     return res.status(404)
-                        .json({ message: "No user with this Id" })
+                        .json({ message: "Thought deleted" })
                 }
                 res.json({ message: "Thought deleted" })
             })
